@@ -5,7 +5,7 @@ def load_library (string)
   # code goes here
   emotemp = YAML.load_file(string)
 
-  return emo
+  return emotemp
 end
 
 def get_japanese_emoticon
