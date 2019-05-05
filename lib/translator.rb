@@ -6,8 +6,8 @@ def load_library (string)
   emotemp = YAML.load_file(string)
   emo = {}
   emotemp.each do |key, emo|
-    get_meaning[emo[1]] = emo[0]
-    get_emoticon[emo[0]] = emo[1]
+    emo[:get_meaning[emo[1]]] = emo[0]
+    emo[:get_emoticon[emo[0]]] = emo[1]
   end
   return emo
 end
