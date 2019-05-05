@@ -1,9 +1,9 @@
 # require modules here
 require "yaml"
 require "pry"
-def load_library (string)
+def load_library (yamlPath)
   # code goes here
-  emotemp = YAML.load_file(string)
+  emotemp = YAML.load_file(yamlPath)
   emot = {}
   meaning = {}
   emoticon = {}
@@ -16,8 +16,9 @@ def load_library (string)
   return emot
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon (yamlPath, emo)
   # code goes here
+  emot = load_library (yamlPath)
 end
 
 def get_english_meaning
