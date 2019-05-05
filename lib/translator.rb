@@ -13,6 +13,7 @@ def load_library (string)
   end
   emot[:get_meaning] = meaning
   emot[:get_emoticon] = emoticon
+  binding.pry
   return emot
 end
 
