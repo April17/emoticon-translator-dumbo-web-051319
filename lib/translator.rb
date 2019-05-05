@@ -13,7 +13,7 @@ def load_library (string)
   end
   emot[:get_meaning] = meaning
   emot[:get_emoticon] = emoticon
-  return emot.values
+  return meaning emoticon
 end
 
 def get_japanese_emoticon
