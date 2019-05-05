@@ -6,6 +6,7 @@ def load_library (string)
   get_meaning = {}
   get_emoticon = {}
   emotemp = YAML.load_file(string)
+  binding.pry
   return emotemp
 end
 
