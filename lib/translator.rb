@@ -19,7 +19,7 @@ end
 def get_japanese_emoticon (yamlPath, emo)
   # code goes here
   emot = load_library (yamlPath)
-  if emot["get_emoticon"].key?[emo]
+  if emot["get_emoticon"].key?(emo)
     return emot["get_emoticon"][emo]
   else
     return "Sorry, that emoticon was not found"
