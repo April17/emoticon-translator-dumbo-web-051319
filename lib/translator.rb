@@ -11,7 +11,7 @@ def load_library (string)
     get_emoticon[emo[0]] = emo[1]
   end
   emo = {[get_emoticon, get_meaning]}
-  return emotemp
+  return emo
 end
 
 def get_japanese_emoticon
