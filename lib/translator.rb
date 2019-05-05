@@ -10,6 +10,7 @@ def load_library (string)
     get_meaning[emo[1]] = emo[0]
     get_emoticon[emo[1]] = emo[2]
   end
+  binding.pry
   return emotemp
 end
 
