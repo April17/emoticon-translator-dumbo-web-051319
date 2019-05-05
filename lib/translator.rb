@@ -13,8 +13,7 @@ def load_library (string)
     emo[:get_meaning][emo[1]] = emo[0]
     emo[:get_emoticon][emo[0]] = emo[1]
   end
-  binding.pry
-  return emotemp
+  return emo
 end
 
 def get_japanese_emoticon
