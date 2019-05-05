@@ -3,7 +3,6 @@ require "yaml"
 require "pry"
 def load_library (string)
   # code goes here
-  emo = {[]}
   get_meaning = {}
   get_emoticon = {}
   emotemp = YAML.load_file(string)
@@ -11,6 +10,7 @@ def load_library (string)
     get_meaning[emo[1]] = emo[0]
     get_emoticon[emo[0]] = emo[1]
   end
+  emo = {[get_emoticon, get_meaning]}
   return emotemp
 end
 
