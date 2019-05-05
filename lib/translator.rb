@@ -8,8 +8,8 @@ def load_library (string)
   meaning = {}
   emoticon = {}
   emotemp.each do |key, emo|
-    meaning[emo[1]] = {}
-    emoticon[emo[0]] = {}
+    meaning[emo[1]] = key
+    emoticon[emo[0]] = emo[1]
   end
   emot["get_meaning"] = meaning
   emot["get_emoticon"] = emoticon
