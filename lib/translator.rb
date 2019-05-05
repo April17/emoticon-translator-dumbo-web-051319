@@ -5,14 +5,14 @@ def load_library (string)
   # code goes here
   emotemp = YAML.load_file(string)
   emot = {}
+  meaning = {}
+  emoticon = {}
   emotemp.each do |key, emo|
-    emot[:get_meaning] = emo[1]
-    emot[:get_emoticon] = emo[0]
+    meaning[emo[1]] = emo[0]
+    emoticon[emo[0]] = emo[1]
   end
-  emotemp.each do |key, emo|
-    emot[:get_meaning][emo[1]] = emo[0]
-    emot[:get_emoticon][emo[0]] = emo[1]
-  end
+  emot[:get_meaning] = meaning
+  emot[:get_emoticon] = emoticon
   return emot
 end
 
