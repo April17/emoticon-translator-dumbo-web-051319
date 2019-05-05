@@ -12,7 +12,7 @@ def load_library (string)
     emoticon << emo[1]
   end
   emot[:"get_meaning"] = meaning
-  emot[:"get_emoticon"] = emoticon
+
   return emot
 end
 
