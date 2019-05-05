@@ -4,16 +4,16 @@ require "pry"
 def load_library (string)
   # code goes here
   emotemp = YAML.load_file(string)
-  emo = {}
+  emot = {}
   emotemp.each do |key, emo|
-    emo[:get_meaning] = emo[1]
-    emo[:get_emoticon] = emo[0]
+    emot[:get_meaning] = emo[1]
+    emot[:get_emoticon] = emo[0]
   end
   emotemp.each do |key, emo|
-    emo[:get_meaning][emo[1]] = emo[0]
-    emo[:get_emoticon][emo[0]] = emo[1]
+    emot[:get_meaning][emo[1]] = emo[0]
+    emot[:get_emoticon][emo[0]] = emo[1]
   end
-  return emo
+  return emot
 end
 
 def get_japanese_emoticon
