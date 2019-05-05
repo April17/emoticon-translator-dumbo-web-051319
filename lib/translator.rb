@@ -3,10 +3,8 @@ require "yaml"
 require "pry"
 def load_library (string)
   # code goes here
-
-  emo = {:get_emoticon => {}, :get_meaning => {}}
-
   emotemp = YAML.load_file(string)
+  emo = {}
   emotemp.each do |key, emo|
     get_meaning[emo[1]] = emo[0]
     get_emoticon[emo[0]] = emo[1]
